@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^2.0.0",
+    "@nuxt/ui": "^4.5.0",
     "@tailwindcss/vite": "^4.0.16"
   }
 }

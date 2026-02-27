@@ -1,36 +1,22 @@
-<script setup>
-import pageData from '@/data/index.json'
-const page = ref(pageData)
-
+<script setup lang="ts">
 definePageMeta({
-  layout: "default",
-});
+  layout: "default"
+})
 </script>
 
 <template>
-  <Container>
-    <Hero
-      :title="page.hero.title"
-      :description="page.hero.description"
-      :image="page.hero.image"
-      :imageAlt="page.hero.imageAlt"
-      :buttons="page.hero.buttons"
-    ></Hero>
-    <Logos :title="page.logos.title" :icons="page.logos.icons"></Logos>
-    <Features
-      :title="page.features.title"
-      :description="page.features.description"
-      :items="page.features.items"
-    ></Features>
-    <Testimonials
-      :title="page.testimonials.title"
-      :description="page.testimonials.description"
-      :items="page.testimonials.items"
-    ></Testimonials>
-    <Cta
-      :title="page.cta.title"
-      :description="page.cta.description"
-      :buttons="page.cta.buttons"
-    ></Cta>
-  </Container>
+  <div class="home">
+
+    <section class="intro">
+      <h1>Ohkaÿe - Charlotte Demode</h1>
+      <p>Photographer</p>
+    </section>
+
+    <section class="preview">
+      <NuxtLink to="/projects">Projects</NuxtLink>
+      <NuxtLink to="/publication">Publications</NuxtLink>
+      <NuxtLink to="/about">About</NuxtLink>
+    </section>
+
+  </div>
 </template>
